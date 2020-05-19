@@ -1,0 +1,10 @@
+(defun factorial()
+	(princ "Enter Number :")
+	(setq num (read))
+	(setq res 1)
+	(sdraw '(loop
+		(setq res (* num res))
+		(setq num (- num 1))
+	(when (<= num 0) (princ "Factorial is : ")(return res))
+	))
+)
